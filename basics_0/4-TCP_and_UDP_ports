@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display all listenig ports (only socket) and show this the pid and name
+netstat -pl
