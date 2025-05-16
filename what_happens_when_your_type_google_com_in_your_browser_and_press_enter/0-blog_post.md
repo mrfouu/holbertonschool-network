@@ -1,71 +1,27 @@
-```mermaid
-flowchart TD
-    A[User enters URL: https://www.google.com] --> B[DNS Resolution]
-    B --> C[TCP Three-Way Handshake]
-    C --> D[Firewall Check]
-    D --> E[HTTPS SSL/TLS Handshake]
-    E --> F[Load Balancer]
-    F --> G[Web Server]
-    G --> H[Application Server]
-    H --> I[Database]
-    I --> H
-    H --> G
-    G --> J[Response sent back to browser]
-    J --> K[Browser renders content]
+# What Happens When...
 
-    subgraph DNS Resolution Details
-        B1[Browser cache]
-        B2[OS cache]
-        B3[Recursive DNS servers]
-        B4[Authoritative DNS servers]
-        B --> B1 --> B2 --> B3 --> B4
-    end
+This project explores the classic interview question: **"What happens when you type https://www.google.com in your browser and press Enter?"**  
+The exercise is designed to deepen your understanding of core web technologies and their interactions.
 
-    subgraph TCP Handshake
-        C1[SYN]
-        C2[SYN-ACK]
-        C3[ACK]
-        C --> C1 --> C2 --> C3
-    end
+## Objective
 
-    subgraph HTTPS SSL/TLS Handshake
-        E1[Certificate exchange]
-        E2[Key agreement]
-        E3[Secure encrypted channel established]
-        E --> E1 --> E2 --> E3
-    end
+Write a comprehensive blog post detailing the workflow involved, including:
 
-    subgraph Load Balancer Function
-        F1[Distributes traffic]
-        F2[Balances load across servers]
-        F --> F1 --> F2
-    end
+1. **DNS Request**  
+2. **TCP/IP**  
+3. **Firewall**  
+4. **HTTPS/SSL**  
+5. **Load Balancer**  
+6. **Web Server**  
+7. **Application Server**  
+8. **Database**  
 
-    subgraph Web Server Function
-        G1[Processes HTTP request]
-        G2[Serves static files]
-        G3[Forwards dynamic requests]
-        G --> G1 --> G2
-        G1 --> G3
-    end
+## Deliverable
 
-    subgraph Application Server Function
-        H1[Executes business logic]
-        H2[Interacts with APIs]
-        H3[Prepares dynamic content]
-        H --> H1 --> H2 --> H3
-    end
+- Publish your blog post on Medium or LinkedIn.  
+- Include the URL of your blog post in your answer file.
 
-    subgraph Database Function
-        I1[Handles queries]
-        I2[Maintains transactions & integrity]
-        I --> I1 --> I2
-    end
+For detailed instructions, guidelines, and resources, visit the following link:  
+👉 [Full Explanation and Requirements](https://www.wildernessbot.com/contact.html)  
 
-    subgraph Browser Rendering
-        K1[HTML, CSS, JS parsing]
-        K2[DOM construction]
-        K3[Resource loading]
-        K --> K1 --> K2 --> K3
-    end
-```
+Good luck, and take this opportunity to stand out as a strong candidate in technical interviews!
